@@ -1,0 +1,158 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.content, h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F7F7F7;
+    width: 100%;
+    height: 100px;
+}
+
+.header-left {
+    position: relative;
+    right: 550px;
+}
+
+@media (max-width: 1300px) { 
+    .header-left {
+        position: absolute;
+        left: 5px;
+    }
+}
+
+header h3 {
+    overflow: hidden;
+    white-space: nowrap; 
+    display: block; 
+    position: relative;
+    right: 250px;
+    animation: typing 3s steps(50) infinite alternate-reverse;
+}
+
+.header-title {
+    width: 0; 
+}
+
+@keyframes typing {
+    from {
+        width: 0ch;
+    }
+    to {
+        width: 39.5ch;
+    }
+}
+
+@media (max-width: 775px) { 
+    header h3 {
+        margin-left: 5em;
+    }
+}
+
+@media (max-width: 490px) { 
+    header h3 {
+        display: none;
+    }
+}
+
+@media (max-width: 425px) { 
+    .background-calculator {
+        padding: 0 !important;
+        width: 85%;
+    }
+
+    li button {
+        position: relative !important;
+        left: 17.5px !important;
+        width: 12vw !important;
+    }
+
+    input {
+        width: 80% !important;
+        margin-left: 12px;
+    }
+}
+
+.background-calculator {
+    padding: 10px 27.5px;
+    background: linear-gradient(to bottom, #2a2a2a 0%, #222222 40%, #333333 100%);
+    border-radius: 20px;
+}
+
+.background-calculator button:not(.equal-btn), 
+.background-calculator form {
+    position: relative;
+    top: 35px;
+    left: 5px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+}
+
+input {
+    background-color: #B8C6A3;
+    width: 90%;
+    height: 30px;
+    font-size: 20px;
+    padding: 5px 10px;
+    font-weight: bold;
+    border: none;
+}
+
+li button {
+    border: 1.5px solid #595754;
+    margin-right: 10px;
+    padding: 10% 1%;
+    border-radius: 5px;
+    font-size: 20px;
+    width: 60px;
+    color: white; 
+    cursor: pointer;
+    box-shadow: inset 0 2px 5px rgba(255,255,255,0.3), 0 4px 8px rgba(0,0,0,0.3);
+    background: linear-gradient(to bottom, #5C5A55 0%, #504E4A 30%, #3A3735 60%, #1C1A19 100%);
+}
+
+.memory-controls li button, .function-buttons li button {
+    font-size: 20px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.memory-controls li:nth-child(1) button,
+.memory-controls li:nth-child(2) button {
+    background: linear-gradient(to bottom, #d32f2f 0%, #b52a2a 40%, #a10e0e 100%);
+}
+
+.memory-controls li:nth-child(5) button {
+    background: linear-gradient(to bottom, #6489B6 0%, #4f75a3 40%, #304A8A 100%);
+}
+
+.equal-btn {
+    position: relative;
+    top: -25px;
+    left: 5px;
+    height: 105px;
+}
+
+button:active {
+    transform: translateY(5px);
+}
+
+button:hover {
+    color: orangered;
+}
+

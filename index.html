@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <a href="#"><img src="https://fincalculator.ru/ico/icon-072.png" alt=""></a>
+        </div>
+
+        <div class="header-title">
+            <h3>A convenient calculator for your calculations!</h3>
+        </div>
+    </header>
+    <h1>Simple calculator</h1>
+
+    <div class="content">
+        <div class="background-calculator">
+        <form action="">
+            <input id="calculator" type="text" placeholder="0">
+        </form>
+            <ul class="memory-controls">
+                <li><button onclick="calc_clear()">CE</button></li>
+                <li><button onclick="clear_All()">C</button></li>
+                <li><button onclick="delete_num()">&larr;</button></li>
+                <li><button onclick="inverse()">1/x</button></li>
+                <li><button onclick="random_sign()">+/-</button></li>
+
+            </ul>
+
+            <ul>
+                <li><button onmousedown="ins('7')">7</button></li>
+                <li><button onmousedown="ins('8')">8</button></li>
+                <li><button onmousedown="ins('9')">9</button></li>
+                <li><button onmousedown="ins('/')">&divide;</button></li>
+                <li><button onclick="root()">&radic;</button></li>
+            </ul>
+
+            <ul>
+                <li><button onmousedown="ins('4')">4</button></li>
+                <li><button onmousedown="ins('5')">5</button></li>
+                <li><button onmousedown="ins('6')">6</button></li>
+                <li><button onmousedown="ins('*')">х</button></li>
+                <li><button onclick="percent()">%</button></li>
+            </ul>
+
+            <ul>
+                <li><button onmousedown="ins('1')">1</button></li>
+                <li><button onmousedown="ins('2')">2</button></li>
+                <li><button onmousedown="ins('3')">3</button></li>
+                <li><button onmousedown="ins('-')">-</button></li>
+            </ul>
+
+            <ul>
+                <li><button onmousedown="ins('0')">0</button></li>
+                <li><button onmousedown="ins('00')">00</button></li>
+                <li><button onmousedown="ins('.')">.</button></li>
+                <li><button onmousedown="ins('+')">+</button></li>
+                <li><button onclick="equals()" class="equal-btn">=</button></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
